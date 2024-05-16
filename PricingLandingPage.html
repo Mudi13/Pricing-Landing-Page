@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="C:\Users\Mudit\OneDrive\Desktop\Work\Development\Motion.jpeg">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="PricingLandingPage.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <img src="C:\Users\Mudit\OneDrive\Desktop\Work\Development\image.jpg" alt="" class="logo">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 style="color: rgb(59, 52, 19); font-size: 45px; font-family: Papyrus, fantasy;"><u><i>Product Pricing</i></u></h1>
+
+    <section>
+        <div class="pricing-card">
+            <img src="C:\Users\Mudit\OneDrive\Desktop\Work\Development\basic.jpg" alt="Basic Plan Image" width="160" height="150">
+            <h2>Basic Plan</h2>
+            <h3>For Freelancers</h3>
+            <h2>$5/Month</h2>
+            <p>One Member</p>
+            <ul class="u">
+                <li>Work Schedule</li>
+                <li>Time Tracking</li>
+                <li>Reports</li>
+            </ul>
+            <button onclick="purchasePlan('Basic')">Buy Now</button>
+        </div>
+
+        <div class="pricing-card">
+            <img src="C:\Users\Mudit\OneDrive\Desktop\Work\Development\sta.jpg" alt="Pro Plan Image" width="160" height="150">
+            <h2>Standard Plan</h2>
+            <h3>For Regular Teams</h3>
+            <h2>$10/Month</h2>
+            <p>Teammate/Month</p>
+            <ul class="u">
+                <li>Everything In Basic</li>
+                <li>Request(eg-PTO,WFH)</li>
+                <li>Teamates & Messaging</li>
+            </ul>
+            <button onclick="purchasePlan('Standart')">Buy Now</button>
+        </div>
+
+        <div class="pricing-card">
+            <img src="C:\Users\Mudit\OneDrive\Desktop\Work\Development\pr.jpg" alt="Premium Plan Image" width="160" height="150">
+            <h2>Premium Plan</h2>
+            <h3>For Tailor-Made Solution</h2>
+                <h2>$15/Month</h2>
+                <p>Teammate/Month</p>
+                <ul class="u">
+                    <li>Everything In Team</li>
+                    <li>White-Label Platform</li>
+                    <li>24/7 VIP Support</li>
+                </ul>
+                <button onclick="purchasePlan('Premium')">Buy Now</button>
+        </div>
+    </section>
+
+    <script>
+        function purchasePlan(plan) {
+            alert(`You have chosen the ${plan} plan. Redirecting to payment...`);
+            // Add logic for redirection or further processing
+        }
+
+    </script>
+    <section id="user-settings">
+        <h2>User Settings</h2>
+        <label for="currency-select">Currency:</label>
+        <select id="currency-select" onchange="updateSettings()">
+            <option value="USD">US Dollar ($)</option>
+            <option value="EUR">Euro (€)</option>
+            <option value="GBP">British Pound (£)</option>
+            <!-- Add more currency options as needed -->
+        </select>
+
+    </section>
+
+    <script>
+        // Your existing JavaScript code here
+
+        // Function to update user settings
+        function updateSettings() {
+            var selectedCurrency = document.getElementById("currency-select").value;
+            var selectedUnit = document.getElementById("unit-select").value;
+
+            saveUserPreferences(selectedCurrency, selectedUnit);
+        }
+
+        function saveUserPreferences(currency, unit) {
+            console.log(`User preferences updated: Currency - ${currency}, Unit - ${unit}`);
+        }
+    </script>
+
+
+    <footer>
+        <a>Copyright &copy; and &reg; Since
+            <script>
+                document.write(new Date().getFullYear())
+            </script> Under MotionCut : (Made By Mudit Chauhan)
+        </a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <!--  social icons or links here -->
+        <a href="https://www.linkedin.com/in/mudit-chauhan-120a09224/" target="_blank">LinkedIn</a>
+        <a href="mailto:muditchauhan13@gmail.com">Email</a>
+        <a href="https://github.com/Mudi13" target="_blank">GitHub</a>
+        <a>Phone: xxxxxxxxxx</a>
+
+    </footer>
+
+</body>
+
+</html>

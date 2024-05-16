@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Images/image');
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(168, 177, 162);
+}
+
+header.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #18091e;
+    color: #fff;
+    padding: 2px;
+}
+
+.logo {
+    max-height: 80px;
+}
+
+nav ul.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul.nav-list li {
+    margin-right: 50px;
+}
+
+nav ul.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul.nav-list li a:hover {
+    color: #ffd700;
+}
+
+h1,
+h2 {
+    text-align: center;
+    height: 5px;
+}
+
+.u {
+    text-align: left;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.pricing-card {
+    background-color: #c9c8bb;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(101, 183, 189, 0.759);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+    /* Added for scaling effect on hover */
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: purple;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+footer {
+    text-align: right;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    display: block;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+
+}
+
+/* Additional styles for interactivity */
+
+.fas:hover {
+    background: none !important;
+    color: purple;
+}
+
+
+.nav-item {
+    flex-wrap: wrap;
+}
+
+.menu li a:hover {
+    color: rgb(186, 10, 171) !important;
+    opacity: 1.5;
+}
+
